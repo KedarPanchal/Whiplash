@@ -1,6 +1,6 @@
 # HNW
 
-I might call this Haybale because I like haybales. If there's any other cool name for a haybale I might call it that.
+I'm calling this whiplash now.
 
 ## Things to figure out/and actually do
 * Add cool effects that add character to the noise
