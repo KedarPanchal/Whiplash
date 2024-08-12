@@ -17,12 +17,6 @@
   rslider bounds(12, 234, 105, 101), channel("Crunch"), range(0, 1, 0.5, 1, 0.01), text("Crunch") ; Adjusts the exponentiation of the noise signal
   rslider bounds(114, 234, 105, 101), channel("Suffocate"), range(0, 1, 0.5, 1, 0.01), text("Suffocate") ; Adjusts the phase distortion of the noise signal, adding more punch to lower noise and muting the higher noise frequencies
   rslider bounds(322, 234, 105, 101), channel("Volume"), range(0, 1, 0.8, 1, 0.01), text("Volume") ; Duh
-  
-  ; LFO
-  rslider bounds(12, 344, 105, 101), channel("LFOFrequency"), range(0.1, 100, 1, 1, 0.1), text("LFO Frequency")
-  rslider bounds(114, 344, 105, 101), channel("LFOAmplitude"), range(0, 1, 0.5, 1, 0.01), text("LFO Amplitude")
-  combobox bounds(218, 359, 80, 20), channel("Option"), items("Dirtiness", "Wail", "Crunch", "Suffocate", "Volume"), value(1)
-  combobox bounds(218, 389, 80, 20), channel("Waveform"), items("Sine", "Triangle", "Bipolar Square", "Unipolar Square", "Sawtooth", "Down-facing Sawtooth"), value(1)
 </Cabbage>
 <CsoundSynthesizer>
   <CsOptions>
@@ -81,31 +75,6 @@
         kSuffocate = -0.999
       endif
       
-      ; Do LFO stuff
-      kLFOAmplitude chnget "LFOAmplitude"
-      kLFOFrequency chnget "LFOFrequency"
-      iWaveform cabbageGetValue "Waveform"
-      iWaveform = iWaveform - 1
-      
-      iChannelStringIndex chnget "Option"
-      if (iChannelStringIndex == 1) then
-        SChannelString = "Dirtiness"
-      elseif (iChannelStringIndex == 2) then
-        SChannelString = "Wail"
-      elseif (iChannelStringIndex == 3) then
-        SChannelString = "Crunch"
-      elseif (iChannelStringIndex == 4) then
-        SChannelString = "Suffocate"
-      else
-        SChannelString = "Volume"
-      endif
-      
-      kLFO lfo kLFOAmplitude, kLFOFrequency, iWaveform
-      kLFOValue chnget SChannelString
-      kLFOValue = kLFO * kLFOValue
-      chnset kLFOValue, SChannelString
-      
-
       ; Generate noise
       aNoise noise iAmp, kbeta
       aFilteredNoise lowpass2 aNoise, iFreq, kq ; Apply a low pass filter for pitch modulation
