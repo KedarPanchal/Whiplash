@@ -43,7 +43,8 @@
       iAmp = p5
 
       kbeta chnget "Dirtiness"
-      kbeta = (kbeta * 2 - 1) * -1
+      kbeta = (kbeta * 2 - 1) * -1 ; Transpose kbeta range from 0-1 to -1-1 and invert it to make the dirtiness be the max value
+      ; Make sure that my ears don't get blown out when at the limits
       if (kbeta == 1) then
         kbeta = 0.995
       elseif (kbeta == -1) then
@@ -51,10 +52,11 @@
       endif
       
       kq chnget "Wail"
-      kq = kq * 499 + 1
+      kq = kq * 499 + 1 ; Transpose kq range from 0-1 to 1-500
       
       iLimit chnget "Scratch"
-      iLimit = 1 - iLimit
+      iLimit = 1 - iLimit ; Invert to make the effect line up with the description
+      ; Make sure my ears don't get blown out
       if (iLimit == 0) then
         iLimit = 0.001
       endif
@@ -64,13 +66,15 @@
       iFreq = iFreq * iTranspose
       
       kCrunch chnget "Crunch"
-      kCrunch = (1 - kCrunch) * 2
+      kCrunch = (1 - kCrunch) * 2 ; Invert kCrunch and transpose range from 0-1 to 0-2
+      ; Save my ears...again
       if (kCrunch == 0) then
         kCrunch = 0.001
       endif
       
       kSuffocate chnget "Suffocate"
-      kSuffocate = (kSuffocate * 2 - 1) * -1
+      kSuffocate = (kSuffocate * 2 - 1) * -1 ; Transpose kSuffocate range from 0-1 to -1-1
+      ; As with literally every *other* if statement, this is to save my ears when pushing a filter to the limits
       if (kSuffocate == -1) then
         kSuffocate = -0.999
       endif
