@@ -2,21 +2,21 @@
   form caption("Whiplash") size(425, 400), guiMode("queue"), pluginId("def1")
   ; keyboard bounds(14, 450, 422, 95)
   ; ADSR Sliders
-  rslider bounds(12, 14, 100, 100), channel("Attack"), range(0, 1, 0.1, 1, .01), text("Attack"), filmstrip("knob2.png", 64)
-  rslider bounds(115, 14, 100, 100), channel("Decay"), range(0, 1, 0.5, 1, .01), text("Decay"), filmstrip("knob2.png", 64)
-  rslider bounds(218, 14, 100, 100), channel("Sustain"), range(0, 1, 0.5, 1, .01), text("Sustain"), filmstrip("knob2.png", 64)
-  rslider bounds(312, 14, 100, 100), channel("Release"), range(0, 1, 0.7, 1, .01), text("Release"), filmstrip("knob2.png", 64)
+  rslider bounds(12, 14, 100, 100), channel("Attack"), range(0, 1, 0.1, 1, .01), text("Attack"), filmstrip("assets/knob2.png", 64)
+  rslider bounds(115, 14, 100, 100), channel("Decay"), range(0, 1, 0.5, 1, .01), text("Decay"), filmstrip("assets/knob2.png", 64)
+  rslider bounds(218, 14, 100, 100), channel("Sustain"), range(0, 1, 0.5, 1, .01), text("Sustain"), filmstrip("assets/knob2.png", 64)
+  rslider bounds(312, 14, 100, 100), channel("Release"), range(0, 1, 0.7, 1, .01), text("Release"), filmstrip("assets/knob2.png", 64)
 
   ; Silly noise sliders (with cool names now!)
-  rslider bounds(54, 134, 100, 100), channel("Wail"), range(0, 1, 0, 1, 0.01), text("Wail"), filmstrip("knob2.png", 64) ; Adjusts resonance of the noise when pitchshifting using a lowpass filter, allowing for a wail-tone to be created
-  rslider bounds(140, 180, 55, 55), channel("Dirtiness"), range(0, 1, 0.5, 1, 0.01), text("Dirtiness"), filmstrip("knob.png", 64) ; Adjusts low-pass filter of initial noise-generation filter equation
-  rslider  bounds(94, 214, 55, 55), channel("Suffocate"), channel("Suffocate"), range(0, 1, 0.5, 1, 0.01), text("Suffocate"), filmstrip("knob.png", 64) ; Adjusts the phase distortion of the noise signal, adding more punch to lower noise and muting the higher noise frequencies
-  rslider bounds(258, 134, 100, 100), channel("Scratch"), range(0, 1, 0.5, 1, 0.01), text("Scratch"), filmstrip("knob2.png", 64) ; Adjusts the limit of the clipping filter to allow for clipping distortion. Inversely related to the clipping filter's limit
-  rslider bounds(298, 214, 55, 55), channel("Depth"), range(-1, 1, 0, 1, 1), text("Depth"), filmstrip("knob.png", 64) ; Adjusts how many octaves to transpost the noise's pitch up/down.
-  rslider bounds(344, 180, 55, 55), channel("Crunch"), range(0, 1, 0.5, 1, 0.01), text("Crunch"), filmstrip("knob.png", 64) ; Adjusts the exponentiation of the noise signal
+  rslider bounds(54, 134, 100, 100), channel("Wail"), range(0, 1, 0, 1, 0.01), text("Wail"), filmstrip("assets/knob2.png", 64) ; Adjusts resonance of the noise when pitchshifting using a lowpass filter, allowing for a wail-tone to be created
+  rslider bounds(140, 180, 55, 55), channel("Dirtiness"), range(0, 1, 0.5, 1, 0.01), text("Dirtiness"), filmstrip("assets/knob.png", 64) ; Adjusts low-pass filter of initial noise-generation filter equation
+  rslider  bounds(94, 214, 55, 55), channel("Suffocate"), channel("Suffocate"), range(0, 1, 0.5, 1, 0.01), text("Suffocate"), filmstrip("assets/knob.png", 64) ; Adjusts the phase distortion of the noise signal, adding more punch to lower noise and muting the higher noise frequencies
+  rslider bounds(258, 134, 100, 100), channel("Scratch"), range(0, 1, 0.5, 1, 0.01), text("Scratch"), filmstrip("assets/knob2.png", 64) ; Adjusts the limit of the clipping filter to allow for clipping distortion. Inversely related to the clipping filter's limit
+  rslider bounds(298, 214, 55, 55), channel("Depth"), range(-1, 1, 0, 1, 1), text("Depth"), filmstrip("assets/knob.png", 64) ; Adjusts how many octaves to transpost the noise's pitch up/down.
+  rslider bounds(344, 180, 55, 55), channel("Crunch"), range(0, 1, 0.5, 1, 0.01), text("Crunch"), filmstrip("assets/knob.png", 64) ; Adjusts the exponentiation of the noise signal
   
   ; Volume control
-  rslider bounds(312, 284, 100, 100), channel("Volume"), range(0, 1, 0.8, 1, 0.01), text("Volume"), filmstrip("knob2.png", 64) ; Duh
+  rslider bounds(312, 284, 100, 100), channel("Volume"), range(0, 1, 0.8, 1, 0.01), text("Volume"), filmstrip("assets/knob2.png", 64) ; Duh
 </Cabbage>
 <CsoundSynthesizer>
   <CsOptions>
