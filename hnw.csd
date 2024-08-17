@@ -1,6 +1,6 @@
 <Cabbage>
-  form caption("Whiplash") size(425, 400), guiMode("queue"), pluginId("def1")
-  image bounds(0, 0, 435, 400), file("assets/gooey.png")
+  form caption("Whiplash") size(425, 400), colour(37.1, 37.1, 37.1), guiMode("queue"), pluginId("def1")
+  image bounds(0, 0, 425, 400), file("assets/gooey.png")
   ; ADSR Sliders
   rslider bounds(12, 14, 100, 100), channel("Attack"), range(0, 1, 0.1, 1, .01), filmstrip("assets/knob2.png", 64)
   rslider bounds(115, 14, 100, 100), channel("Decay"), range(0, 1, 0.5, 1, .01), filmstrip("assets/knob2.png", 64)
