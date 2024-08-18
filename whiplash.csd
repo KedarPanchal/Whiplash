@@ -73,7 +73,7 @@
       endif
       
       kSuffocate chnget "Suffocate"
-      kSuffocate = (kSuffocate * 2 - 1) * -1 ; Transpose kSuffocate range from 0-1 to -1-1
+      kSuffocate = kSuffocate * 2 - 1 ; Transpose kSuffocate range from 0-1 to -1-1
       ; As with literally every *other* if statement, this is to save my ears when pushing a filter to the limits
       if (kSuffocate == -1) then
         kSuffocate = -0.999
@@ -82,7 +82,7 @@
       ; Generate noise
       aNoise noise iAmp, kbeta
       aFilteredNoise lowpass2 aNoise, iFreq, kq ; Apply a low pass filter for pitch modulation
-      aFilteredNoise pdhalfy aFilteredNoise, kSuffocate
+      aFilteredNoise pdhalf aFilteredNoise, kSuffocate
       aFilteredNoise powershape aFilteredNoise, kCrunch ; Exponentiates input signal to add distortion and scales accordingly 
       aFilteredNoise clip aFilteredNoise, 0, iLimit ; Apply a clipping distortion
       ; Spit out sound
