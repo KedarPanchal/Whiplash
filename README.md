@@ -11,6 +11,7 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 ## Filters Overview
 
 ---
+[Back to top](#table-of-contents)
 * The `Attack`, `Decay`, `Sustain`, and `Release` filters provide a standard ADSR envelope that most other synths have.
 * `Wail` increases the resonance of the sound, creating a wailing effect when increased.
 * The `Volume` filter changes the output gain of the synthesizer.
@@ -20,6 +21,7 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 ## Filters In-Depth
 
 ---
+[Back to top](#table-of-contents)
 Only the filters whose effects could not be adequately covered in the [Filters Overview](#filters-overview) section of this `README` are discussed below.
 
 * `Wail` increases the sharpness of a resonant peak that forms before a low-pass filter applied to the noise to modulate its pitch. The sharper the resonant peak, the more pronounced the wailing effect is.
@@ -31,4 +33,5 @@ Only the filters whose effects could not be adequately covered in the [Filters O
 ## License
 
 ---
+[Back to top](#table-of-contents)
 The GNU General Public License v3.0 2024 - [Kedar Panchal](https://github.com/KedarPanchal). Please look at the [LICENSE](LICENSE) for further information.
