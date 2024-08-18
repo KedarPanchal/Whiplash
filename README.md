@@ -6,10 +6,9 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 ---
 * [Filters overview](#filters-overview)
 * [Filters in-depth](#filters-in-depth)
-* Planned updates
 * License
 
-## Filters overview
+## Filters Overview
 
 ---
 * The `Attack`, `Decay`, `Sustain`, and `Release` filters provide a standard ADSR envelope that most other synths have.
@@ -18,6 +17,13 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 * The `Depth` filter transposes the pitch of the synth one octave down or one octave up.
 * The remainder of the filters apply various distortion effects that can change the texture of the noise when used in tandem with one another and the other filters described above.
   
-## Filters in-depth
+## Filters In-Depth
 
 ---
+Only the filters whose effects could not be adequately covered in the [Filters Overview](#filters-overview) section of this `README` are discussed below.
+
+* `Wail` increases the sharpness of a resonant peak that forms before a low-pass filter applied to the noise to modulate its pitch. The sharper the resonant peak, the more pronounced the wailing effect is.
+* `Dirtiness` is inversely related to the cutoff frequency of the initial low-pass filter (applied before the `Wail` effect), with a higher `Dirtiness` indicating a lower cutoff frequency that allows for more static to seep through in the final sound.
+* `Suffocate` is related to the amount of phasor distortion applied to the signal.
+* `Scratch` is inversely related to the limiting value of a clipping filter applied to the output signal. Hence, a higher `Scratch` causes greater clipping distortion on the output signal.
+* `Crunch` is inversely related to an exponent that the output signal is raised to, causing a powershaping distortion effect. The value of the `Crunch` effect is not the value of this exponent, however. 
