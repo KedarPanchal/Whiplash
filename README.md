@@ -4,11 +4,23 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 ## Table of Contents
 
 ---
+* [Installation](#installation)
 * [Filters overview](#filters-overview)
 * [Filters in-depth](#filters-in-depth)
 * [Asset Credits](#asset-credits)
 * [License](#license)
-* License
+
+## Installation
+
+---
+[Back to top](#table-of-contents)
+
+Download the `.zip` or `.tar.gz` archive from the [latest release](https://github.com/KedarPanchal/whiplash/releases/latest) on GitHub. Extract the archive into a folder and move the extracted folder to the following location based on your operating system:
+
+* Windows: `C:\Program Files\Common Files\VST3`
+* MacOS/OS X: `Library/Audio/Plug-ins/VST3`
+
+Afterward, fire up your DAW and re-scan for plugins to make sure Whiplash shows up.
 
 ## Filters Overview
 
