@@ -1,6 +1,8 @@
 # Whiplash
 Whiplash is a harsh noise synthesizer with various distortion effects intended to be used in harsh noise, power electronics, and other industrial music projects.
 
+![Whiplash GUI](images/synth.JPG)
+
 ## Table of Contents
 
 ---
