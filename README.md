@@ -6,12 +6,15 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 ---
 * [Filters overview](#filters-overview)
 * [Filters in-depth](#filters-in-depth)
+* [Asset Credits](#asset-credits)
+* [License](#license)
 * License
 
 ## Filters Overview
 
 ---
 [Back to top](#table-of-contents)
+
 * The `Attack`, `Decay`, `Sustain`, and `Release` filters provide a standard ADSR envelope that most other synths have.
 * `Wail` increases the resonance of the sound, creating a wailing effect when increased.
 * The `Volume` filter changes the output gain of the synthesizer.
@@ -22,6 +25,7 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 
 ---
 [Back to top](#table-of-contents)
+
 Only the filters whose effects could not be adequately covered in the [Filters Overview](#filters-overview) section of this `README` are discussed below.
 
 * `Wail` increases the sharpness of a resonant peak that forms before a low-pass filter applied to the noise to modulate its pitch. The sharper the resonant peak, the more pronounced the wailing effect is.
@@ -30,8 +34,16 @@ Only the filters whose effects could not be adequately covered in the [Filters O
 * `Scratch` is inversely related to the limiting value of a clipping filter applied to the output signal. Hence, a higher `Scratch` causes greater clipping distortion on the output signal.
 * `Crunch` is inversely related to an exponent that the output signal is raised to, causing a powershaping distortion effect. The value of the `Crunch` effect is not the value of this exponent, however. 
 
+## Asset Credits
+
+---
+[Back to top](#table-of-contents)
+
+The knob designs are slightly modified versions of the simple and wave knob tempaltes of the [KnobMan3D](https://github.com/g200kg/knobman3d) filmstrip generator. The font used in the UI is the Dead Elder Metal font by [Studio Hello Good](https://www.fontspace.com/studio-hello-good). The [background image for the UI](https://c4.wallpaperflare.com/wallpaper/158/930/508/black-metal-texture-wallpaper-thumb.jpg) was found on WallpaperFire.
+
 ## License
 
 ---
 [Back to top](#table-of-contents)
+
 The GNU General Public License v3.0 2024 - [Kedar Panchal](https://github.com/KedarPanchal). Please look at the [LICENSE](LICENSE) for further information.
