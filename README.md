@@ -17,6 +17,8 @@ Whiplash is a harsh noise synthesizer with various distortion effects intended t
 ---
 [Back to top](#table-of-contents)
 
+> <b>Note:</b> A version of [64-bit CSound 6](https://csound.com/download.html) needs to be installed on your machine for both the VST3 plugin and the binary distributions of Whiplash to work.
+
 Download the VST3 version of the `.zip` or `.tar.gz` archive from the [latest release](https://github.com/KedarPanchal/whiplash/releases/latest) on GitHub. Extract the archive into a folder and move the extracted folder to the following location based on your operating system:
 
 * Windows: `C:\Program Files\Common Files\VST3`
